@@ -1,6 +1,7 @@
 import "./globals.css";
 
 import { Footer, NavBar } from "@components";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: "Drive Flex",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className='relative'>
         <NavBar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
